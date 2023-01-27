@@ -1,4 +1,8 @@
 @echo off
+
+echo Make it easy to Copy 0BackupC
+echo By N'Note
+
 set /p userName=Enter your user name:
 
 set sourcePath1=C:\Users\%userName%\Favorites
