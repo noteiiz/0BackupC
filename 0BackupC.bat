@@ -21,54 +21,54 @@ set destinationPath6=D:\0BackupC\%userName%\AppData\Roaming\Microsoft\Excel
 
 if exist "%sourcePath1%" (
     xcopy "%sourcePath1%" "%destinationPath1%" /E /I
-    echo Favorites is copy Done
+    echo "Favorites is copy Done" >>0BackupC_Log.txt
     pause
 ) else (
-    echo Favorites not found we skip it
+    echo "Favorites not found we skip it" >>0BackupC_Log.txt
     pause
 )
 
 if exist "%sourcePath2%" (
     xcopy "%sourcePath2%" "%destinationPath2%" /E /I
-    echo AppData\Local\Google is copy Done
+    echo "AppData\Local\Google is copy Done" >>0BackupC_Log.txt
     pause
 ) else (
-    echo AppData\Local\Google not found we skip it
+    echo "AppData\Local\Google not found we skip it" >>0BackupC_Log.txt
     pause
 )
 
 if exist "%sourcePath3%" (
     xcopy "%sourcePath3%" "%destinationPath3%" /E /I
-    echo AppData\Local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe is copy Done
+    echo "AppData\Local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe is copy Done" >>0BackupC_Log.txt
     pause
 ) else (
-    echo AppData\Local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe not found we skip it
+    echo "AppData\Local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe not found we skip it" >>0BackupC_Log.txt
     pause
 )
 
 if exist "%sourcePath4%" (
     xcopy "%sourcePath4%" "%destinationPath4%" /E /I
-    echo AppData\Roaming\Microsoft\signatures is copy Done
+    echo "AppData\Roaming\Microsoft\signatures is copy Done" >>0BackupC_Log.txt
     pause
 ) else (
-    echo AppData\Roaming\Microsoft\signatures not found we skip it
+    echo "AppData\Roaming\Microsoft\signatures not found we skip it" >>0BackupC_Log.txt
     pause
 )
 
 if exist "%sourcePath5%" (
     xcopy "%sourcePath5%" "%destinationPath5%" /E /I
-    echo Desktop is copy Done
+    echo "Desktop is copy Done" >>0BackupC_Log.txt
     pause
 ) else (
-    echo Desktop not found we skip it
+    echo "Desktop not found we skip it" >>0BackupC_Log.txt
     pause
 )
 
 if exist "%sourcePath6%" (
-    xcopy "%sourcePath6%" "%destinationPath6%" /E /I
-    echo AppData\Roaming\Microsoft\Excel is copy Done
+    xcopy "%sourcePath6%" "%destinationPath6%" /E /I 
+    echo "AppData\Roaming\Microsoft\Excel is copy Done" >>0BackupC_Log.txt
     pause
 ) else (
-    echo AppData\Roaming\Microsoft\Excel not found we skip it
+    echo "AppData\Roaming\Microsoft\Excel not found we skip it" >>0BackupC_Log.txt
     pause
 )
