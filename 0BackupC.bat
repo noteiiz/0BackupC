@@ -2,6 +2,8 @@
 set /p userName=Enter the username:
 echo [%date% %time%] Starting the backup process... >> "0BackupC.txt"
 
+:: Follow new version update at https://github.com/noteiiz/0BackupC
+
 :: Copy Desktop
 if exist "C:\Desktop" (
     robocopy "C:\Desktop" "D:\0BackupC\Desktop" /E /COPY:DAT /R:0 /W:0 /NP
